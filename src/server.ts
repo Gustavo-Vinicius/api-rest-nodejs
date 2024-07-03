@@ -6,9 +6,9 @@ const app = fastify()
 // GET, POST, PUT, PATCH, DELETE
 
 app.get('/hello', async () => {
-    const tables = knex('sqlite_schema').select('*')
+    const transaction = await knex('transactions').select('*')
 
-    return tables
+    return transaction
 })
 
 app.listen({

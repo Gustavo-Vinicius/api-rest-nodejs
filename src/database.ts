@@ -10,7 +10,7 @@ export const config: Knex.Config = {
     
         client: 'sqlite',
         connection: {
-            filename: env.DATABASE_URL,
+            filename: "./db/app.db",
     
         },
     

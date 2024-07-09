@@ -4,6 +4,7 @@ npm-debug.log
 yarn-error.log
 .env
 db/app.db
+build
 
 # Diretórios de build e deploy
 build/
